@@ -176,7 +176,6 @@ Frequent Usage:
 * Reads package.json
 * Installs the dependencies in the local node_modules folder
 * In global mode, it makes a node module accessible to all.
-
 * Can install from a folder, tarball, web, etc...
 * Can specify dev or optional dependencies.
 
@@ -186,4 +185,39 @@ Frequent Usage:
 * [Using nodes event module](http://code.tutsplus.com/tutorials/using-nodes-event-module--net-35941)
 * [Node.js and asynchronous programming with promises](http://spin.atomicobject.com/2012/03/14/nodejs-and-asynchronous-programming-with-promises/)
 * [GitHub repo](https://github.com/sayar/NodeMVA)
+
+## Module Overview
+
+* What is Express?
+* Installing & Using Express
+* Demo: Creating a simple REST API
+* Templating
+
+## What is Express?
+
+* Express is a minimal, open source, and flexible node.js web app framework designed to make developing websites, web apps, and APIs much easier.
+
+## Why use Express?
+
+* Express helps you respond to requests with route support so that you may write responses to specific URLs.
+* Supports multiple templating engines to simplify generating HTML.
+
+## Installing and Using Express
+
+```
+npm install express
+npm install jade
+```
+
+## Explanation of Routes
+
+* A router maps HTTP requests to a callback.
+* HTTP requests can be sent as GET/POST/PUT/DELETE, etc.
+* URLs describe the location targeted.
+* Node helps you map a HTTP GET request like: `http://localhost:8888/index`
+* To a request handler (callback)
+
+```javascript
+app.get('/index', function (req, res) {});
+```
 
