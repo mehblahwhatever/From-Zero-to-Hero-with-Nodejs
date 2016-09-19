@@ -125,6 +125,7 @@ fs.readdir('.', function (err, files) {
 		});
 	}
 });
+```
 
 ## Promises
 
@@ -134,5 +135,12 @@ fs.readdir('.', function (err, files) {
 
 [Read More](http://spin.atomicobject.com/2012/03/14/nodejs-and-asynchronous-programming-with-promises/)
 
+## What is NPM?
 
+* Official package manager for Node.
+* Bundled and installed automatically with the environment.
+
+Frequent Usage:
+* `npm install --save package_name`
+* `npm update`
 
