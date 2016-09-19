@@ -78,3 +78,13 @@
 * With Node, there is no call to start the loop.
 * The loop starts and doesn't end until the last callback is complete.
 * Event loop is run under a single thread; therefore, sleep() makes everything halt.
+
+## Blocking I/O
+
+```javascript
+var fs = require('fs');
+
+var contents = fs.readFileSync('package.json').toString();
+console.log(contents);
+```
+
