@@ -144,3 +144,46 @@ Frequent Usage:
 * `npm install --save package_name`
 * `npm update`
 
+## What is a package.json?
+
+```javascript
+{
+	"name": "Node101",
+	"version": "0.1.0",
+	"description": "MVA Presentation Code",
+	"main": "1_hello_world.js",
+	"author": {
+		"name": "Rami Sayar",
+		"email": ""
+	}
+}
+```
+
+## Popular NPM Modules
+
+**Most Depended Upon**
+* 7053 underscore
+* 6458 async
+* 5591 request
+* 4931 lodash
+* 3630 commander
+* 3543 express
+* 2708 optimist
+* 2634 coffee-script
+
+## How does it work?
+
+* Reads package.json
+* Installs the dependencies in the local node_modules folder
+* In global mode, it makes a node module accessible to all.
+
+* Can install from a folder, tarball, web, etc...
+* Can specify dev or optional dependencies.
+
+## Resources
+
+* [Callbacks are imperative promises are functional nodes biggest missed opportunity](https://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/)
+* [Using nodes event module](http://code.tutsplus.com/tutorials/using-nodes-event-module--net-35941)
+* [Node.js and asynchronous programming with promises](http://spin.atomicobject.com/2012/03/14/nodejs-and-asynchronous-programming-with-promises/)
+* [GitHub repo](https://github.com/sayar/NodeMVA)
+
