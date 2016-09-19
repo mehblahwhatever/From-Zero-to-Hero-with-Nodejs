@@ -221,3 +221,16 @@ npm install jade
 app.get('/index', function (req, res) {});
 ```
 
+## Creating a Simple Express Application
+
+```javascript
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+	res.json({message: 'hooray! welcome to our api!'});
+});
+
+app.listen(process.env.PORT || 8080);
+```
+
