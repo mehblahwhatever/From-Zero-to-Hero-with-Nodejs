@@ -119,10 +119,20 @@ fs.readdir('.', function (err, files) {
 								console.log('Error writing file: ' + err);
 							}
 						});
-					});
+					}.bind(this));
 				}
 			});
 		});
 	}
 });
+
+## Promises
+
+* A promise will return a promise for an object in the future.
+* Promises can be chained together.
+* Simplify programming of async systems.
+
+[Read More](http://spin.atomicobject.com/2012/03/14/nodejs-and-asynchronous-programming-with-promises/)
+
+
 
