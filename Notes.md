@@ -234,3 +234,43 @@ app.get('/', function (req, res) {
 app.listen(process.env.PORT || 8080);
 ```
 
+## Module Overview
+
+* What are Web Sockets?
+* Using Socket.IO to connect users, broadcast, and receive messages
+* Using Mongo to save messages and emit last received messages
+
+## What are Web Sockets
+
+* A Websocket is a protocol designed to allow web applications to create a full-duplex channel over TCP (i.e. to have bi-directional communication) between the web browser and a web server
+* It is fully compatible with HTTP and uses TCP port number 80.
+* WebSockets allowed web applications to become real-time and support advanced interactions between client and server
+* It is supposed by several browsers including Internet Explorer, Google Chrome, Firefox, Safari, and Opera.
+
+## What is Socket.IO
+
+* Socket.IO is a simple JavaScript library and node.js module that allows you to create real-time bidirectional event-based communication apps simply and quickly.
+* It simplifies the process of using WebSockets significantly. We will be using Socket.IO v1.0 to make our chatroom app.
+
+## Implementing Socket.IO
+
+* Add it to the package.json
+* In Visual Studio > right click NPM to add module
+* OR: ```npm install --save socket.io```
+
+## About NoSQL databases
+
+* Not only SQL
+* Different types: document based, graph databases, etc.
+* MongoDB, Couchbase, HBase, Cassandra
+* Object oriented APIs
+* Good for large amounts of data, can be scaled
+
+## Using MongoDB
+
+* Need to create a mongodb
+* 3rd party sources like MongoHQ or MongoLab
+* Use the MongoLab add on in Azure
+* Can customize and manually use via VM
+* Need the mongodb URI for connection
+

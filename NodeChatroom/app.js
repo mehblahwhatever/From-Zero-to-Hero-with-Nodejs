@@ -5,7 +5,7 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
-var mongo = require('mongoodb').MongoClient;
+var mongo = require('mongodb').MongoClient;
 
 var app = express();
 
@@ -33,6 +33,8 @@ app.get('/users', user.list);
 var serve = http.createServer(app);
 var io = require('socket.io')(serve);
 
+var mongolab_uri = process.env.CUSTOMCONNSTR_MONGOLAB_URI || 'mongodb://localhost/chatroom';
+
 serve.listen(app.get('port'), function () {
 	console.log('Express server listening on port ' + app.get('port'));
 });
@@ -40,7 +42,7 @@ serve.listen(app.get('port'), function () {
 io.on('connection', function (socket) {
 	console.log('a user connected');
 
-	mongo.connect(process.env.CUSTOMCONNSTR_MONGOLAB_URI, function (err, db) {
+	mongo.connect(mongolab_uri, function (err, db) {
 		if (err) {
 			console.warn(err.message);
 		} else {
@@ -59,7 +61,7 @@ io.on('connection', function (socket) {
 	});
 
 	socket.on('chat', function (msg) {
-		mongo.connect(process.env.CUSTOMCONNSTR_MONGOLAB_URI, function (err, db) {
+		mongo.connect(mongolab_uri, function (err, db) {
 			if (err) {
 				console.warn(err.message);
 			} else {
