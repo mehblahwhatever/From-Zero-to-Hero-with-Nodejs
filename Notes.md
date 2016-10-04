@@ -274,3 +274,44 @@ app.listen(process.env.PORT || 8080);
 * Can customize and manually use via VM
 * Need the mongodb URI for connection
 
+## Module Overview
+
+* Introduction to Jade
+* Jade Templates
+* Implementing Bootstrap
+* Creating the chat UI
+
+## Templating with Jade
+
+* Jade is a templating language to simplify writing HTML.
+* Jade syntax and keywords map directly to HTML.
+* Jade adds the ability to separate and extend your HTML.
+	* Helps prevent code repeat
+	* Ensures clean HTML is generated
+	* Allows you to insert values into HTML through templates
+
+Sample Jade:
+
+```jade
+doctype html
+html(lang="en")
+	head
+		title=pageTitle
+		script(type='text/javascript').
+			if (foo) {
+				bar(1 + 5)
+			}
+	body
+		h1 Jade - node template engine
+		#container.col
+			if youAreUsingJade
+				p You are amazing
+			else
+				p Get on it!
+			p.
+				Jade is a terse and simple
+				templating language with a 
+				strong focus on performance
+				and powerful features
+```
+
