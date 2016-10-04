@@ -290,28 +290,64 @@ app.listen(process.env.PORT || 8080);
 	* Ensures clean HTML is generated
 	* Allows you to insert values into HTML through templates
 
-Sample Jade:
+## Templating with Jade
+
+Simple Tags:
 
 ```jade
-doctype html
-html(lang="en")
-	head
-		title=pageTitle
-		script(type='text/javascript').
-			if (foo) {
-				bar(1 + 5)
-			}
-	body
-		h1 Jade - node template engine
-		#container.col
-			if youAreUsingJade
-				p You are amazing
-			else
-				p Get on it!
-			p.
-				Jade is a terse and simple
-				templating language with a 
-				strong focus on performance
-				and powerful features
+div
+	address
+	i
+	strong
 ```
 
+Output:
+
+```html
+<div>
+	<address>
+	</address>
+	<i>
+	</i>
+	<strong>
+	</strong>
+</div>
+```
+
+## Templating with Jade
+
+Tags with Attributes:
+
+```jade
+h1(id="title") Welcome to Jade
+
+button(class="btn", data-action="bea").
+	Be Awesome
+```
+
+Output:
+
+```html
+<h1 id="title">Welcome to Jade</h1>
+
+<button data-action="bea" class="btn">Be Awesome</button>
+```
+
+## Templating with Jade
+
+The extends keyword allows a template to extend a layout or parent template. It can then override certain pre-defined blocks of content.
+
+The block keyword allows you to establish a block or replace the content of pre-defined blocks.
+
+## What is Bootstrap?
+
+* Framework for developing responsive sites including presentation and behavior (HTML/CSS/JS)
+* Number 1 project on Github
+* [link](http://getbootstrap.com)
+* Accounts for common functionality and layout needs
+* Customize it to the project needs: [link](http://getbootstrap.com/customize/)
+
+## Implementing Bootstrap
+
+* Download Bootstrap: [link](http://getbootstrap.com/getting-started/#download)
+* Add into the public folder and do some file management housekeeping in terms of names and pathing.

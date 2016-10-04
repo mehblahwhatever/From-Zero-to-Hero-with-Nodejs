@@ -8,6 +8,7 @@
     "email": ""
   },
   "dependencies": {
+    "bson": "0.5.5",
     "express": "^3.4.4",
     "jade": "*",
     "mongodb": "^1.4.40",
