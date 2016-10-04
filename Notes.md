@@ -351,3 +351,30 @@ The block keyword allows you to establish a block or replace the content of pre-
 
 * Download Bootstrap: [link](http://getbootstrap.com/getting-started/#download)
 * Add into the public folder and do some file management housekeeping in terms of names and pathing.
+
+## Module Overview
+
+* Adding Libraries to the Frontend (jQuery, Socket.IO)
+* Listening for Messages
+* Sending Messages
+
+## Module Overview
+
+* Asure Websites Overview
+* Introduction to the Azure Dashboard
+* Deploying to Azure with Visual Studio
+* Deploying to Azure with Github
+* Debugging Remote Node Applications with Visual Studio
+
+## Azure Websites
+
+* Easy to deploy to a variety of different web sites: node, python, php, asp.net, etc...
+* Can install some software from the gallery like WordPress or preconfigured stacks (MEAN stack)
+* Has a few limitations such as cannot configure ports, compile native modules for Node
+
+## Azure Websites
+
+* Can configure custom domains
+* Can add FTP users
+* Can run multiple web sites
+* Ideal for a production / staging environment
